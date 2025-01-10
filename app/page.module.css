@@ -41,13 +41,15 @@
 
 .contactGrid {
 	display: grid;
-	grid-template-columns: 30% repeat(1, 1fr) 30%;
+	grid-template-columns: repeat(1, 1fr);
 }
 
 .contactItemsWrapper {
-	grid-column-start: 2;
 	display: flex;
 	justify-content: space-between;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .contactItem {
@@ -70,4 +72,15 @@
 .contactLink {
 	text-decoration: none;
 	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.contactItemsWrapper {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.seperator:after {
+		display: none;
+	}
 }
