@@ -23,10 +23,10 @@ export default function Home() {
                     className={styles.subHeadLine}
                 >{`I am a Webdeveloper located in Salzburg, Austria 🇦🇹`}</h3>
                 <div className={styles.contactContainer}>
-                    <div>Github</div>
-                    <div>LinkedIn</div>
-                    <div>X</div>
-                    <div>Instagram</div>
+                    <div className={styles.contactItem}>Github</div>
+                    <div className={styles.contactItem}>LinkedIn</div>
+                    <div className={styles.contactItem}>X</div>
+                    <div className={styles.contactItem}>Instagram</div>
                 </div>
             </div>
         </div>
