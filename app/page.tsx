@@ -1,9 +1,34 @@
+import styles from './page.module.css'
+import Image from 'next/image'
+
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-		<h1>My Homepage</h1>
-      </main>
-    </div>
-  );
+    return (
+        <div className={styles.gridLayout}>
+            <div className={styles.mainContent}>
+                <h1 className={styles.headLine}>Welcome to my CV</h1>
+                <div className={styles.imageContainer}>
+                    <div className={styles.image}>
+                        <Image
+                            src="/portrait.jpg"
+                            width={200}
+                            height={200}
+                            alt="Picture of Me, generated in AI"
+                        />
+                    </div>
+                </div>
+                <h3
+                    className={styles.subHeadLine}
+                >{`I am Markus <MFSepplive> Frenslich`}</h3>
+                <h3
+                    className={styles.subHeadLine}
+                >{`I am a Webdeveloper located in Salzburg, Austria 🇦🇹`}</h3>
+                <div className={styles.contactContainer}>
+                    <div>Github</div>
+                    <div>LinkedIn</div>
+                    <div>X</div>
+                    <div>Instagram</div>
+                </div>
+            </div>
+        </div>
+    )
 }

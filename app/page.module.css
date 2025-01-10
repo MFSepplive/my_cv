@@ -1,0 +1,40 @@
+.gridLayout {
+	display: grid;
+	grid-template-columns: 10% repeat(1, 1fr) 10%;
+	grid-template-rows: 5% repeat(1, 1fr);
+  	gap: 20px;
+	justify-content:center;
+	min-height: 100vh;
+}
+
+.mainContent {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+.headLine {
+	text-align: center;
+}
+
+.subHeadLine {
+	text-align: center;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.image {
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.contactContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	div {
+		text-align: center;
+	}
+}
